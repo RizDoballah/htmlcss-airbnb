@@ -3,24 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+.container {
   margin: auto;
+  padding: 10px;
 }
 
-.roma {
+.city.roma {
   background-image: url(../img/roma.jpg);
 }
-.copenaghen {
+.city.copenaghen {
   background-image: url(../img/copenaghen.jpg);
 }
-.tokyo {
+.city.tokyo {
   background-image: url(../img/tokyo.jpg);
 }
-.roma, .copenaghen, .tokyo {
+.city {
   margin: 20px;
   position: relative;
-  height: 300px;
-  width: 500px;
+  height: 150px;
+  width: 300px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -44,15 +45,6 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.roma:hover .layover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.2)
-}
-.copenaghen:hover .layover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.2)
-}
-.tokyo:hover .layover {
-  cursor: pointer;
+.city:hover .layover {
   background-color: rgba(0, 0, 0, 0.2)
 }
