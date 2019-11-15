@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: auto;
+}
+
+.roma {
+  background-image: url(../img/roma.jpg);
+}
+.copenaghen {
+  background-image: url(../img/copenaghen.jpg);
+}
+.tokyo {
+  background-image: url(../img/tokyo.jpg);
+}
+.roma, .copenaghen, .tokyo {
+  margin: 20px;
+  position: relative;
+  height: 300px;
+  width: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.titolo {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: oblique;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50% );
+}
+.layover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.roma:hover .layover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2)
+}
+.copenaghen:hover .layover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2)
+}
+.tokyo:hover .layover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2)
+}
