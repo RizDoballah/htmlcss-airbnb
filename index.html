@@ -6,7 +6,20 @@
     <title>Airbnb</title>
   </head>
   <body>
+    <!-- lista non ordinata -->
+      <ul class="nav-bar">
+       <img src="img/airbnb-logo.png" alt="">
+       <li><a href="default.asp">English (US)</a></li>
+       <li><a href="news.asp">&euro; EUR</a></li>
+       <li><a class="active" href="contact.asp">Host a home</a></li>
+       <li><a href="about.asp">Host a experience</a></li>
+       <li><a href="default.asp">Help</a></li>
+       <li><a href="default.asp">Sign up</a></li>
+       <li><a href="default.asp">Login</a></li>
+      </ul>
+    <!-- lista non ordinata -->
     <main class="container">
+      <!-- container città -->
      <div class="city roma">
        <div class="layover">
        </div>
@@ -14,20 +27,39 @@
         ROMA
        </div>
      </div>
-      <div class="city copenaghen">
+     <div class="city copenaghen">
       <div class="layover">
       </div>
       <div class="titolo">
         COPENAGHEN
       </div>
      </div>
-      <div class="city tokyo">
+     <div class="city tokyo">
       <div class="layover">
       </div>
       <div class="titolo">
         TOKYO
       </div>
-    </div>
+     </div>
+      <!-- container città -->
+      <!-- form -->
+     <div class="sub-container">
+       <h2>Book unique places to stay and things to do.</h2>
+       <form>
+         <input type="text" name="WHERE"placeholder="Anywhere" value="">
+         <br>
+         <input type="text" name="CHECK-IN"placeholder="mm/dd/yyyy" value="">
+         <input type="text" name="CHECK-OUT"placeholder="mm/dd/yyyy" value="">
+         <br>
+         <select name="Guests">
+          <option value="adults">adults</option>
+          <option value="children">children</option>
+         </select>
+         <br>
+         <button type="button" name="search-button">search</button>
+       </form>
+      <!-- form -->
+     </div>
    </main>
   </body>
 </html>
